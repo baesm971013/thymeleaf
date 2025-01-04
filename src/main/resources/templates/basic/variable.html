@@ -26,5 +26,10 @@
     <li>${userMap['sumin'].getUsername()} = <span th:text = "${userMap['sumin'].getUsername()}"></span></li>
 </ul>
 
+<h3>지역 변수 - (th:with)</h3>
+<div th:with = "first=${users[0]}">
+    <p>first man to see <span th:text = "${first.getUsername()}"></span></p>
+</div>
+
 </body>
 </html>
